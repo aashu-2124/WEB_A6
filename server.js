@@ -3,7 +3,7 @@
  *  I declare that this assignment is my own work in accordance with Seneca's
  *  Academic Integrity Policy:
  *  https://www.senecacollege.ca/about/policies/academic-integrity-policy.html
- * Name: ______________________ Student ID: ______________ Date: ______________
+ * Name: Aastha Kalpeshkumar Patel Student ID: 118841220 Date: 19 Nov 2023
  *  Published URL: ___________________________________________________________
  *********************************************************************************/
 const legoData = require("./modules/legoSets"); // Update the path accordingly

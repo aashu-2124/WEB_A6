@@ -7,7 +7,7 @@
     "start": "node server.js",
     "tw:build": "tailwindcss build ./public/css/tailwind.css -o ./public/css/main.css"
   },
-  "author": "",
+  "author": "aastha",
   "license": "ISC",
   "dependencies": {
     "@tailwindcss/typography": "^0.5.10",
