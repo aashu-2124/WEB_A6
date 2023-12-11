@@ -4,7 +4,7 @@
  *  Academic Integrity Policy:
  *  https://www.senecacollege.ca/about/policies/academic-integrity-policy.html
  * Name: Aastha Kalpeshkumar Patel Student ID: 118841220 Date:  
- *  Published URL: https://github.com/aashu-2124/A5
+ *  Published URL: https://vast-gray-duck-tux.cyclic.app/
  *********************************************************************************/
 const legoData = require("./modules/legoSets"); 
 const authData = require("./modules/auth-service");  
