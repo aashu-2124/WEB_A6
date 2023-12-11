@@ -6,6 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Add Set</title>
   <link rel="stylesheet" href="/css/main.css" />
+  <style>
+    .bright-green-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .bright-green-button:hover {
+      background-color: #45a049;
+    }
+
+    .w-full {
+      width: 100%;
+    }
+
+    .input-field {
+      width: 100%;
+      height: 40px;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+  </style>
 </head>
 
 <body tabindex="-1">
@@ -25,37 +53,38 @@
     <br />
 
     <form action="/lego/addSet" method="POST">
-       <br>
+      <br>
       <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <br>
-      
-        <label for="year">Year:</label>
-        <input type="number" id="year" name="year" required>
-        <br>
-      
-        <label for="num_parts">Number of Parts:</label>
-        <input type="number" id="num_parts" name="num_parts" required>
-        <br>
-      
-        <label for="img_url">Image URL:</label>
-        <input type="url" id="img_url" name="img_url" required>
-        <br>
-      
-        <label for="theme_id">Theme:</label>
-        <select id="theme_id" name="theme_id" required>
+      <input type="text" id="name" name="name" required placeholder="Name" class="w-full input-field">
+      <br>
+
+      <label for="year">Year:</label>
+      <input type="number" id="year" name="year" required placeholder="Year" class="w-full input-field">
+      <br>
+
+      <label for="num_parts">Number of Parts:</label>
+      <input type="number" id="num_parts" name="num_parts" required placeholder="Number of Parts" class="w-full input-field">
+      <br>
+
+      <label for="img_url">Image URL:</label>
+      <input type="url" id="img_url" name="img_url" required placeholder="Image URL" class="w-full input-field">
+      <br>
+
+      <div class="mb-4">
+        <label for="theme_id" class="block text-sm font-medium text-gray-700">Theme:</label>
+        <select id="theme_id" name="theme_id" required class="mt-1 p-2 w-full input-field">
           <% themes.forEach(theme => { %>
-            <option value="<%= theme.id %>"><%= theme.name %></option>
+          <option value="<%= theme.id %>"><%= theme.name %></option>
           <% }) %>
         </select>
-        <br>
-      
-        <label for="set_num">Set Number:</label>
-        <input type="text" id="set_num" name="set_num" required>
-        <br><br>
-      
-        <button type="submit">Submit</button>
-      </form>
+      </div>
+
+      <label for="set_num">Set Number:</label>
+      <input type="text" id="set_num" name="set_num" required placeholder="Set Number" class="w-full input-field">
+      <br>
+
+      <button class="bright-green-button" type="submit">Submit</button>
+    </form>
 
   </div>
 
